@@ -1,9 +1,6 @@
-FROM hub.qucheng.com/library/debian:11.3-slim
+FROM easysoft/debian:11-r0
 
 COPY debian/prebuildfs /
-
-ENV TZ=Asia/Shanghai \
-    DEBIAN_FRONTEND=noninteractive
 
 COPY debian/rootfs /
 
